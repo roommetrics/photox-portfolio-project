@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const AboutPage = () => {
   const portfolioImages = [
@@ -108,7 +109,7 @@ const AboutPage = () => {
               className="relative"
             >
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/about.jpg"
                   alt="Fotograf bei der Arbeit"
                   className="w-full h-full object-cover"
@@ -217,18 +218,18 @@ const AboutPage = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="aspect-square rounded-xl overflow-hidden shadow-lg">
-                    <img src="/01.jpg" alt="Arbeitsprozess 1" className="w-full h-full object-cover" />
+                    <Image src="/01.jpg" alt="Arbeitsprozess 1" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-xl overflow-hidden shadow-lg">
-                    <img src="/02.jpg" alt="Arbeitsprozess 2" className="w-full h-full object-cover" />
+                    <Image src="/02.jpg" alt="Arbeitsprozess 2" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 <div className="space-y-4 pt-8">
                   <div className="aspect-square rounded-xl overflow-hidden shadow-lg">
-                    <img src="/03.jpg" alt="Arbeitsprozess 3" className="w-full h-full object-cover" />
+                    <Image src="/03.jpg" alt="Arbeitsprozess 3" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-xl overflow-hidden shadow-lg">
-                    <img src="/04.jpg" alt="Arbeitsprozess 4" className="w-full h-full object-cover" />
+                    <Image src="/04.jpg" alt="Arbeitsprozess 4" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -327,7 +328,7 @@ const AboutPage = () => {
                 }}
               >
                 <div className="relative aspect-[4/5] overflow-hidden">
-                  <img
+                  <Image
                     src={image.src}
                     alt={image.alt}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -398,7 +399,7 @@ const AboutPage = () => {
                 </div>
                 
                 <p className="text-gray-600 mb-6 font-secondary leading-relaxed italic">
-                  "{testimonial.text}"
+                  {testimonial.text}
                 </p>
                 
                 <div>

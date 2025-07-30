@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const GalleryParallax = () => {
   const images = [
@@ -85,7 +86,7 @@ const GalleryParallax = () => {
               }}
             >
               <div className="relative aspect-[4/5] overflow-hidden">
-                <img
+                <Image
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

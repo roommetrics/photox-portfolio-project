@@ -36,7 +36,7 @@ const Navbar = () => {
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <motion.a
                 key={item.name}
                 href={item.href}
@@ -86,7 +86,7 @@ const Navbar = () => {
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md rounded-lg mt-2 border border-amber-100/50">
-                {navItems.map((item, index) => (
+                {navItems.map((item) => (
                   <motion.a
                     key={item.name}
                     href={item.href}

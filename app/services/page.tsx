@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const ServicesPage = () => {
   const services = [
@@ -274,7 +275,7 @@ const ServicesPage = () => {
                 {/* Image */}
                 <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                    <img
+                    <Image
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover"
@@ -436,7 +437,7 @@ const ServicesPage = () => {
               className="relative"
             >
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="/10.jpg"
                   alt="Fotostudio"
                   className="w-full h-full object-cover"
