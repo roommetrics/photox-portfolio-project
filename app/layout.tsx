@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/Components/Navbar";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 const playfairSans = Playfair_Display({
   variable: "--font-playfair-sans",
@@ -28,8 +29,9 @@ export default function RootLayout({
       <body
         className={`${playfairSans.variable} ${interSans.variable} antialiased`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
